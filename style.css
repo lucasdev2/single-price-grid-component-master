@@ -59,7 +59,7 @@ section#price{
 span{
     font-size: 30px;
     font-weight: 700;
-}  
+}
 span#permonth{
     color: var(--Light-Gray);
     font-size: 16px;
@@ -91,7 +91,7 @@ section#us{
 section h2{
     margin-bottom: 15px;
 }
-@media(max-width:500px){
+@media screen and (max-width:500px){
     h1{
         color: var(--Cyan);
     }
