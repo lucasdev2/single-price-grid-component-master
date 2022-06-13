@@ -13,7 +13,7 @@
 }
 body{
     font-family: var(--karla);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,7 @@ span#permonth{
     color: var(--Light-Gray);
     font-size: 16px;
     font-weight: 400;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 section#price > p{
     margin-top: 10px;
@@ -91,7 +91,7 @@ section#us{
 section h2{
     margin-bottom: 15px;
 }
-@media screen and (max-width:500px){
+@media(max-width:500px){
     h1{
         color: var(--Cyan);
     }
