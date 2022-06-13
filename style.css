@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --karla:'Karla', sans-serif;
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body{
+    font-family: var(--karla);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray);
+    flex-direction: column;
+}
+h1{
+    color: var(--Cyan);
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 210px 300px;
+    max-width: 1440px;
+    min-width: 500px;
+    padding: 10px;
+}
+section#join{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 10px 10px 0 0;
+    padding: 50px;
+    background-color: white;
+}
+section#join > h2{
+    color: var(--Bright-Yellow);
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+section#join > p{
+    color: var(--Grayish-Blue);
+
+}
+section#price{
+    color: white;
+    background-color: var(--Cyan);
+    border-radius: 0px 0px 0px 10px;
+    padding: 50px;
+}
+span{
+    font-size: 30px;
+    font-weight: 700;
+}  
+span#permonth{
+    color: var(--Light-Gray);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+section#price > p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#botao{
+    background-color: var(--Bright-Yellow);
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding:10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    /* width: 500px; */
+    margin: auto;
+}
+section#us{
+    color: white;
+    background-color: #4abebd;
+    border-radius: 0 0 10px 0;
+    padding: 50px;
+}
+section h2{
+    margin-bottom: 15px;
+}
+@media(max-width:500px){
+    h1{
+        color: var(--Cyan);
+    }
+    body{
+        display: block;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 300px 300px;
+        min-width: 320px;
+        padding: 10px;
+    }
+    section#join{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        border-radius: 5px 5px 0 0;
+        padding: 50px;
+        background-color: white;
+    }
+    section#join > h2{
+        color: var(--Bright-Yellow);
+    }
+    section#join > p{
+        color: var(--Grayish-Blue);
+    
+    }
+    section#price{
+        color: white;
+        background-color: var(--Cyan);
+        padding: 50px;
+        border-radius: 0;
+    }
+    section#us{
+        color: white;
+        background-color: #4abebd;
+        padding: 50px;
+        border-radius: 0 0 5px 5px;
+    }
+    #botao{
+        background-color: var(--Bright-Yellow);
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding:15px 20px;
+        text-align: center;
+        border-radius: 4px;
+        font-weight: 700;
+    }
+    
+    
+}
